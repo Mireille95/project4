@@ -1,0 +1,22 @@
+/* h1{
+
+}
+*{
+  margin: 0px;
+  padding:0px;
+} */
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/02/22/53/background-1792968_960_720.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: Times New Roman;  
+  }
+  p{
+    font-size: 15px;
+    color:white;
+  }
+  .text-left {
+    font-size: 30px;
+    color:white;
+    margin-top: 30%;
+  }
