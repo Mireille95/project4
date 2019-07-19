@@ -12,7 +12,7 @@ function gName(){
 
 
         /* ************************ arrays fails***************************** */
-        
+
 // const nameDisplay = document.querySelector('#gender');
 // const dobInput = document.querySelector('#dob');
 // function gName(){
@@ -73,18 +73,18 @@ function gName(){
     
     document.getElementById('output').innerHTML = output;
     
-    if (dd == 0 && gender =='male')
+    if (gender =='male'&& dd == 0)
     {
        
         document.getElementById("output").innerHTML = "Kwasi";
     } 
 
-    else if(dd == 0 && gender == 'female')
+    else if(gender == 'female' && dd == 0)
     {
         document.getElementById("output").innerHTML = "Akosua" ;
     
     }
-    else if (dd == 1 && gender == 'male')
+    else if (gender == 'male' && dd == 1 )
     {
         document.getElementById("output").innerHTML = "Kwadwo";
     
