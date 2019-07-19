@@ -20,3 +20,30 @@ body{
     color:white;
     margin-top: 30%;
   }
+  /* .glyphicon-pencil{
+  font-size: 35px;
+  color:white;
+  float:right;
+  margin-top: 20%;
+} */
+.col-md-5{
+    margin-top: 80px;
+    box-shadow: 1px 1px 60px 10px black;
+    background: rgba(0,0,0,0.4);
+  }
+  .label{
+    font-weight: normal;
+    margin-top:15px;
+    color:white;
+    font-size: 15px;
+  
+  }
+  .form-control{
+    background: transparent;
+    border-radius:0px;
+    border:0px;
+    border-bottom:1px solid white;
+    font-size: 18px;
+    margin-top: 15px;
+    color:white;
+  }
