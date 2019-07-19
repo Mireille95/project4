@@ -1,19 +1,116 @@
 function gName(){
-    var CC,YY,MM;
-    var input = document.getElementById('DoB').Value;
-    d= new Date(input);
-    if(!!d.ValueOf()){
-        CC=d.getDate();
-        MM=d.getMonth();
-        YY=d.getFullYear();
-    }
-    else{
-        alert("invalid date");
-    }
-    var male=["Kwasi","Kwadwo","Kwabena","","","","",""];
-    var female=["","","","","","","",""];
+  var input = document.getElementById('dob').value;
+  
+    var day= new Date(input);
+
+        MM=day.getMonth();
+        MM= MM +1;
+        DD=day.getDate(); 
+        YY=day.getFullYear();
+
+        
+    var gender= document.getElementById("gender").value;
+
+    var CCC = (YY - 1) / 100 + 1;
+    var CC = parseFloat(CCC);
+    var d = parseInt(( ((CC/4) - 2*CC -1) +((5* YY / 4)) + ((26*(MM + 1) / 10)) + DD)) % 7;
+    var d = (d.toFixed(0));
+    
+    if (d == 0 && gender =="male")
+    {
+        document.getElementById("output").innerHTML = "Kwasi";
+        
+    
+    } 
+    else if (d == 4 && gender == 'male')
+    {
+        document.getElementById("output").innerHTML = "Yaw";
+    
+    } 
+//     else if(d == 0 && gender == 'female')
+//     {
+//         console.log("Akosua") ;
+    
+//     }
+//     else if (d == 1 && gender == 'male')
+//     {
+//         console.log("Kwadwo") ;
+    
+//     } 
+//     else if(d == 1 && gender == 'female')
+//     {
+//         console.log("Adwoa") ;
+    
+//     }
+//     else if (d == 2 && gender == 'male')
+//     {
+//         console.log("Kwabena") ;
+   
+//     } 
+//     else if(d == 2 && gender == 'female')
+//     {
+//         console.log("Abena") ;
+    
+//     }
+//     else if (d == 3 && gender == 'male')
+//     {
+//         console.log("Kwako") ;
+    
+//     } 
+//     else if(d == 3 && gender == 'female')
+//     {
+//         console.log("Akwa") ;
+    
+//     }
+//     else if (d == 4 && gender == 'male')
+//     {
+//         console.log("Yaw") ;
+    
+//     } 
+//     else if(d == 4 && gender == 'female')
+//     {
+//         console.log("yaa") ;
+   
+//     }
 }
 
+
+
+
+
+
+
+// else if (d == 5 && gender == 'male')
+// {
+// alert("Kofi");
+// } 
+// else if(d == 5 && gender == 'female')
+// {
+// alert("Afua");
+// }
+// else if (d == 6 && gender == 'male')
+// {
+// alert("Kwamo");
+// } 
+// else if(d == 6 && gender == 'female')
+// {
+// alert("Ama");
+// }
+
+
+
+// if (document.getElementById('male').checked)
+// {
+//     gender= document.getElementById('male').value;
+//     alert("born on" +Dw[dC] + "Your akan name is" + male[d]);
+//     document.getElementById('output').innerHTML = dW[d];
+// }
+// else if (document.getElementById('female').checked)
+// {
+//     gender= document.getElementById('female').value;
+//     alert("born on" +Dw[dC] + "Your akan name is" + female[d]);
+//     document.getElementById('output').innerHTML = dW[d];
+// }
 
 
 
