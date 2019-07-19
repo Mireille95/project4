@@ -9,93 +9,90 @@ function gName(){
         YY=day.getFullYear();
 
         
-    var gender= document.getElementById("gender").value;
+    var gender= document.getElementById('gender').value;
 
     var CCC = (YY - 1) / 100 + 1;
     var CC = parseFloat(CCC);
     var d = parseInt(( ((CC/4) - 2*CC -1) +((5* YY / 4)) + ((26*(MM + 1) / 10)) + DD)) % 7;
-    var d = (d.toFixed(0));
+    var dd = (d.toFixed(0));
     
-    if (d == 0 && gender =="male")
+    document.getElementById('output').innerHTML = output;
+    
+    if (input == '' && gender =='' )
     {
+     alert("enter the value");
+    }
+     else  if (dd == 0 && gender =='male')
+    {
+       
         document.getElementById("output").innerHTML = "Kwasi";
-        
+    } 
+
+    else if(d == 0 && gender == 'female')
+    {
+        document.getElementById("output").innerHTML = "Akosua" ;
+    
+    }
+    else if (d == 1 && gender == 'male')
+    {
+        document.getElementById("output").innerHTML = "Kwadwo";
     
     } 
+    else if(d == 1 && gender == 'female')
+    {
+        document.getElementById("output").innerHTML = "Adwoa";
+    
+    }
+    else if (d == 2 && gender == 'male')
+    {
+        document.getElementById("output").innerHTML = "Kwabena" ;
+   
+    } 
+    else if(d == 2 && gender == 'female')
+    {
+        document.getElementById("output").innerHTML = "Abena";
+    
+    }
+    else if (d == 3 && gender == 'male')
+    {
+        document.getElementById("output").innerHTML = "Kwako";
+    
+    } 
+    else if(d == 3 && gender == 'female')
+    {
+        document.getElementById("output").innerHTML = "Akwa"; 
+    
+    }
     else if (d == 4 && gender == 'male')
     {
-        document.getElementById("output").innerHTML = "Yaw";
+        document.getElementById("output").innerHTML = "Yaw";  
     
     } 
-//     else if(d == 0 && gender == 'female')
-//     {
-//         console.log("Akosua") ;
-    
-//     }
-//     else if (d == 1 && gender == 'male')
-//     {
-//         console.log("Kwadwo") ;
-    
-//     } 
-//     else if(d == 1 && gender == 'female')
-//     {
-//         console.log("Adwoa") ;
-    
-//     }
-//     else if (d == 2 && gender == 'male')
-//     {
-//         console.log("Kwabena") ;
+    else if(d == 4 && gender == 'female')
+    {
+        document.getElementById("output").innerHTML = "yaa";
    
-//     } 
-//     else if(d == 2 && gender == 'female')
-//     {
-//         console.log("Abena") ;
-    
-//     }
-//     else if (d == 3 && gender == 'male')
-//     {
-//         console.log("Kwako") ;
-    
-//     } 
-//     else if(d == 3 && gender == 'female')
-//     {
-//         console.log("Akwa") ;
-    
-//     }
-//     else if (d == 4 && gender == 'male')
-//     {
-//         console.log("Yaw") ;
-    
-//     } 
-//     else if(d == 4 && gender == 'female')
-//     {
-//         console.log("yaa") ;
-   
-//     }
+    }
+
+
+
+else if (d == 5 && gender == 'male')
+{
+alert("Kofi");
+} 
+else if(d == 5 && gender == 'female')
+{
+alert("Afua");
 }
-
-
-
-
-
-
-
-// else if (d == 5 && gender == 'male')
-// {
-// alert("Kofi");
-// } 
-// else if(d == 5 && gender == 'female')
-// {
-// alert("Afua");
-// }
-// else if (d == 6 && gender == 'male')
-// {
-// alert("Kwamo");
-// } 
-// else if(d == 6 && gender == 'female')
-// {
-// alert("Ama");
-// }
+else if (d == 6 && gender == 'male')
+{
+alert("Kwamo");
+} 
+else if(d == 6 && gender == 'female')
+{
+alert("Ama");
+}
+}
 
 
 
