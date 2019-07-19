@@ -8,8 +8,9 @@ function gName(){
         DD=day.getDate(); 
         DD= DD +1;
         YY=day.getFullYear();
-
-        
+        // var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday', 'Friday', 'Saturday'];  
+        // var male = ['Kwasi' ,'Kwadwo' , 'Kwabena' ,'Kwako' ,'Yaw' , 'Kofi','Kwamo'];
+        // var female =['Akosua','Adwoa','Abena','Akwa','Yaa','Afua','Ama'];
     var gender= document.getElementById('gender').value;
 
     var CCC = (YY - 1) / 100 + 1;
@@ -67,7 +68,7 @@ function gName(){
     } 
     else if(d == 4 && gender == 'female')
     {
-        document.getElementById("output").innerHTML = "yaa";
+        document.getElementById("output").innerHTML = "Yaa";
    
     }
    else if (dd == 5 && gender == 'male')
