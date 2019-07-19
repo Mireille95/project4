@@ -1,35 +1,57 @@
-const btn = document.querySelector('#name');
-const nameDisplay = document.querySelector('#gender');
-const dobInput = document.querySelector('#DoB');
+function gName(){
+    var CC,YY,MM;
+    var input = document.getElementById('DoB').Value;
+    d= new Date(input);
+    if(!!d.ValueOf()){
+        CC=d.getDate();
+        MM=d.getMonth();
+        YY=d.getFullYear();
+    }
+    else{
+        alert("invalid date");
+    }
+    var male=["Kwasi","Kwadwo","Kwabena","","","","",""];
+    var female=["","","","","","","",""];
+}
 
 
-// btn.addEventListener('click' , generate);
 
-function generate(){
- let bday = dobInput.value; //to hold value from input
 
-var bdayArray = bday.split('-'); //makes entered date into an array
-if(bdayArray.length !== 3){
-    alert("invalid Date");
-}else{
-   if(!bdayArray[0].match(/^\d\d\d\d$/) || 
-      !bdayArray[1].match(/^\d\d$/) || 
-      !bdayArray[2].match(/^\d\d$/)){
-       alert("invalid Date");    
-      }else{
-       var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday', 'Friday', 'Saturday'];  
-       var names = ['John' ,'Bien' , 'Meghan' ,'Mugisha' ,'Mireille' , 'Fanny'];   
-       var currentTime = new Date(            
-           parseInt(bdayArray[0]),
-           parseInt(bdayArray[1]) - 1, //month starts from 0
-           parseInt(bdayArray[2])
-       );        
-       var currentDay = currentTime.getDay();       
-       var currentDayName= days[currentDay];
-       var dayName = names[currentDay];
-      nameDisplay.innerHTML = "You were born on "+currentDayName+ " your name is "+ dayName;
-   }
-}};
+
+
+
+// const btn = document.querySelector('#name');
+// const nameDisplay = document.querySelector('#gender');
+// const dobInput = document.querySelector('#DoB');
+
+
+// // btn.addEventListener('click' , generate);
+
+// function generate(){
+//  let bday = dobInput.value; //to hold value from input
+
+// var bdayArray = bday.split('-'); //makes entered date into an array
+// if(bdayArray.length !== 3){
+//     alert("invalid Date");
+// }else{
+//    if(!bdayArray[0].match(/^\d\d\d\d$/) || 
+//       !bdayArray[1].match(/^\d\d$/) || 
+//       !bdayArray[2].match(/^\d\d$/)){
+//        alert("invalid Date");    
+//       }else{
+//        var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday', 'Friday', 'Saturday'];  
+//        var names = ['John' ,'Bien' , 'Meghan' ,'Mugisha' ,'Mireille' , 'Fanny'];   
+//        var currentTime = new Date(            
+//            parseInt(bdayArray[0]),
+//            parseInt(bdayArray[1]) - 1, //month starts from 0
+//            parseInt(bdayArray[2])
+//        );        
+//        var currentDay = currentTime.getDay();       
+//        var currentDayName= days[currentDay];
+//        var dayName = names[currentDay];
+//       nameDisplay.innerHTML = "You were born on "+currentDayName+ " your name is "+ dayName;
+//    }
+// }};
 
 
 
